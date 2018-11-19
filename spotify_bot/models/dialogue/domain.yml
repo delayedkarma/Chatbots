@@ -1,0 +1,37 @@
+%YAML 1.1
+---
+actions:
+- action_top_tracks
+- utter_goodbye
+- utter_greet
+- utter_ask_artist
+config:
+  store_entities_as_slots: true
+entities:
+- artist
+forms: []
+intents:
+- greet:
+    use_entities: true
+- inform:
+    use_entities: true
+- goodbye:
+    use_entities: true
+slots:
+  artist:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_artist:
+  - text: Which artist would you like to know the top tracks for?
+  - text: Which artist?
+  utter_goodbye:
+  - text: Talk to you soon!
+  - text: Bye bye!
+  - text: Hasta luego!
+  - text: Ciao!
+  - text: Adios!
+  utter_greet:
+  - text: Hello! How may I be of service?
+  - text: Hey there! What can I do for you?
