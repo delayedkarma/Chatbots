@@ -14,8 +14,8 @@ class ActionTopTracks(Action):
 		
 	def run(self, dispatcher, tracker, domain):
        		
-		client_id = '6b77b95510684c988f2d514ded4f24ed'
-		client_secret = 'd16a8c26edd249838e82aac8347e28cf'
+		client_id = '' #Add client_id here
+		client_secret = '' #Add client_secret here
 
 		dict = {'Bob Dylan': 'spotify:artist:74ASZWbe4lXaubB36ztrGX', 'Led Zeppelin': 'spotify:artist:36QJpDe2go2KgaRleHCDTp', \
 			'The Beatles': 'spotify:artist:3WrFJ7ztbogyGnTHbHJFl2', 'The Doors': 'spotify:artist:22WZ7M8sxp5THdruNY3gXt', \
